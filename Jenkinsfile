@@ -7,12 +7,13 @@ pipeline {
             steps {
                 
                 sh 'npm pack'
+                sh 'npm start'
                 
             }
         }
         stage('Deploy') {
             steps {
-                sh 'npm start'
+                sh ' echo "deploying" '
                 
             }
         }
