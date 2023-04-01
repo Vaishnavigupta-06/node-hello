@@ -10,9 +10,9 @@ pipeline {
                 
             }
         }
-        stage('Deploy') {
+        stage('Testing') {
             steps {
-                sh 'npm start'
+                sh 'karma run'
                 
             }
         }
