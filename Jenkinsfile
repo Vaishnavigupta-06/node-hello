@@ -12,6 +12,7 @@ pipeline {
         }
         stage('Testing') {
             steps {
+                sh 'npm install karma'
                 sh 'karma run'
                 
             }
